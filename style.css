@@ -369,10 +369,10 @@ p {
 
 [shouldShow='0'] .indic1
 {
-    transform: translate(-20px, -15px) scale(0.2) rotate(-90deg)
+    transform: translate(-20px, -20px) scale(0.2) rotate(-90deg)
 }
 
 [shouldShow='1'] .indic1
 {
-    transform: translate(-20px, -15px) scale(0.2)
+    transform: translate(-20px, -20px) scale(0.2)
 }
