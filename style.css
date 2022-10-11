@@ -49,7 +49,7 @@ nav li a {
 }
 
 .simplewhite {
-    color: rgb(160, 160, 160);
+    color: rgb(197, 197, 197);
     font-family: Satoshi-light;
 }
 
@@ -309,4 +309,68 @@ p {
 
 .stack {
     padding-top: 0;
+}
+
+.problemset
+{
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.pset 
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.sol 
+{
+    padding: 0;
+    overflow: hidden;
+    transition: 1s;
+    cursor: auto;
+}
+
+/* .pset:active .sol 
+{
+    height:auto;
+} */
+
+.inher 
+{
+    padding: 20px;
+}
+
+[shouldShow='1'] .sol
+{
+    height: 700px;
+}
+
+[shouldShow='0'] .sol
+{
+    height: 0;
+}
+
+.indic1 {
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+
+}
+
+.arsmall::before, .arsmall::after
+{
+    background-color: white;
+    animation: none;
+}
+
+[shouldShow='0'] .indic1
+{
+    transform: translate(-20px, -15px) scale(0.2) rotate(-90deg)
+}
+
+[shouldShow='1'] .indic1
+{
+    transform: translate(-20px, -15px) scale(0.2)
 }

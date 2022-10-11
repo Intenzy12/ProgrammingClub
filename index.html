@@ -7,6 +7,8 @@
     <title>Programming Club</title>
     <link rel="stylesheet" href="style.css">
     <script src="bgcanvas.js" defer></script>
+    <script src="solutionclick.js" defer></script>
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
 </head>
 <body style="background-color: black;">
     <nav>
@@ -16,7 +18,7 @@
             </a>
         </div>
         <ul>
-            <li><a href="/" class="simplewhite">Problems & Solutions</a></li>
+            <li><a href="/#solutions" class="simplewhite">Problems & Solutions</a></li>
             <li><a href="/#about" class="simplewhite">About The Programming Club</a></li>
         </ul>
     </nav>
@@ -40,7 +42,7 @@
     <section id="buttons">
         <div class="gp">
             <div class="flexc">
-                <a href="/">
+                <a href="/#solutions">
                     <div class="explorbuttons simplewhite">
                         Problems & Solutions
                     </div>
@@ -102,10 +104,165 @@
         </div>
     </section>
     <div class="sep"></div>
-    <section>
+    <section id="solutions">
         <div class="gp">
+            <div class="contain simplewhite flexc" style="flex-direction: column; align-items: center; padding: 20px 0 0 0; overflow: hidden;;">
+                <h1 class="classic">Challanges:</h1>
+                <div class="problemset contain" style="padding-bottom: 40px;">
+                    <h1 style="color:rgb(62, 200, 228);">
+                        Problem 1:
+                    </h1>
+                    <p>
+                        Roman numerals are
+                        represented by seven
+                        different symbols: I, V, X, L,
+                        C, D and M. Given a roman
+                        numeral, convert it to an
+                        integer.
+                        <br> <br>
+                        <b>
+                            Example Procedure <br>
+                        </b>
+                        Input: s = "III" <br>
+                        Output: 3
+                    </p>
+                </div>
+                <div class="problemset contain" style="padding-bottom: 40px;">
+                    <h1 style="color:rgb(62, 200, 228);">
+                        Problem 2:
+                    </h1>
+                    <p>
+                        An integer is a palindrome
+                        when it reads the same
+                        backward as forward.
+                        Given an integer x, return
+                        true if x is palindrome
+                        integer.
+                        <br> <br>
+                        <b>
+                            Example Procedure <br>
+                        </b>
+                        Input: x = "1221" <br>
+                        Output: true
+                    </p>
+                </div>
+                <div class="problemset contain" style="padding-bottom: 40px;">
+                    <h1 style="color:rgb(62, 200, 228);">
+                        Problem 3:
+                    </h1>
+                    <p>
+                        Write a program to solve a Sudoku puzzle by filling the empty cells.
 
+                        A sudoku solution must satisfy all of the following rules: <br> <br>
+                        <ul style="padding-left:40px;">
+                            <li>
+                                Each of the digits 1-9 must occur exactly once in each row.
+                            </li>
+                            <li>
+                                Each of the digits 1-9 must occur exactly once in each column.
+                            </li>
+                            <li>
+                                Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
+                            </li>
+                        </ul>
+                        <br>
+                        The '.' character indicates empty cells.
+
+                        <b>
+                            Example Procedure <br>
+                        </b>
+                        Input: board = <br> [["5","3",".",".","7",".",".",".","."] <br> ,["6",".",".","1","9","5",".",".","."] <br> ,[".","9","8",".",".",".",".","6","."] <br> ,["8",".",".",".","6",".",".",".","3"] <br> ,["4",".",".","8",".","3",".",".","1"] <br> ,["7",".",".",".","2",".",".",".","6"] <br> ,[".","6",".",".",".",".","2","8","."] <br> ,[".",".",".","4","1","9",".",".","5"] <br> ,[".",".",".",".","8",".",".","7","9"]] <br> <br>
+                        Output: <br> [["5","3","4","6","7","8","9","1","2"] <br> ,["6","7","2","1","9","5","3","4","8"] <br> ,["1","9","8","3","4","2","5","6","7"] <br> ,["8","5","9","7","6","1","4","2","3"] <br> ,["4","2","6","8","5","3","7","9","1"] <br> ,["7","1","3","9","2","4","8","5","6"] <br> ,["9","6","1","5","3","7","2","8","4"] <br> ,["2","8","7","4","1","9","6","3","5"] <br> ,["3","4","5","2","8","6","1","7","9"]]
+                    </p>
+                </div>
+                <div class="problemset contain" style="padding-bottom: 40px;">
+                    <h1 style="color:rgb(62, 200, 228);">
+                        Problem 4:
+                    </h1>
+                    <p>
+                        There are n fishermen who have just returned from a fishing trip. The i-th fisherman has caught a fish of size a. <br> <br>
+                        The fishermen will choose some order in which they are going to tell the size of the fish they caught (the order is just a permutation of size n ). However, they are not entirely honest, and they may "increase" the size of the fish they have caught.
+                        <br> <br>
+                        Formally, suppose the chosen order of the fishermen is [p1,p2,p3,…,pn]. Let bi be the value which the i-th fisherman in the order will tell to the other fishermen. The values bi are chosen as follows:
+
+                        <ul style="padding-left:40px;">
+                            <li>
+                                the first fisherman in the order just honestly tells the actual size of the fish he has caught, so b1=ap1; 
+                            </li>
+                            <li>
+                                every other fisherman wants to tell a value that is strictly greater than the value told by the previous fisherman, and is divisible by the size of the fish that the fisherman has caught. So, for i>1, bi is the smallest integer that is both strictly greater than b1 and divisible by pi. 
+                            </li>
+                        </ul>
+
+                        <br>
+                        <b>
+                            Input <br>
+                        </b>
+                        The first line contains one integer n
+                        (1≤n≤1000) — the number of fishermen. <br> <br>
+                        <b>
+                            Output <br>
+                        </b>
+                        Print one integer — the minimum possible value of ∑bi you can obtain by choosing the order of fishermen optimally.
+                    </p>
+                </div>
+                <div class="pset">
+                    <div class="problemset contain">
+                        <h2>
+                            Solution 1
+                        </h2>
+                        <div class="indic1"> <div class="arrow arsmall"> </div> </div>
+                    </div>
+                    <div class="sol">
+                        <div class="inher">
+                            Solutions will be posted soon.
+                        </div>
+                    </div>
+                </div>
+                <div class="pset">
+                    <div class="problemset contain">
+                        <h2>
+                            Solution 2
+                        </h2>
+                        <div class="indic1"> <div class="arrow arsmall"> </div> </div>
+                    </div>
+                    <div class="sol">
+                        <div class="inher">
+                            Solutions will be posted soon.
+                        </div>
+                    </div>
+                </div>
+                <div class="pset">
+                    <div class="problemset contain">
+                        <h2>
+                            Solution 3
+                        </h2>
+                        <div class="indic1"> <div class="arrow arsmall"> </div> </div>
+                    </div>
+                    <div class="sol">
+                        <div class="inher">
+                            Solutions will be posted soon.
+                        </div>
+                    </div>
+                </div>
+                <div class="pset">
+                    <div class="problemset contain">
+                        <h2>
+                            Solution 4
+                        </h2>
+                        <div class="indic1"> <div class="arrow arsmall"> </div> </div>
+                    </div>
+                    <div class="sol">
+                        <div class="inher">
+                            Solutions will be posted soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section>
+        <div class="gp" style="height:700px;"></div>
     </section>
 </body>
 </html>
