@@ -316,12 +316,14 @@ p {
     margin: 0;
     padding: 10px;
     border-radius: 0;
+    position: relative;
 }
 
 .pset 
 {
     width: 100%;
     cursor: pointer;
+    position: relative
 }
 
 .sol 
